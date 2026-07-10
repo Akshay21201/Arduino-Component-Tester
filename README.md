@@ -1,498 +1,247 @@
-\# Arduino Advanced Multimeter
+# Arduino Component Tester
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Arduino-UNO-00979D?logo=arduino" />
+  <img src="https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus" />
+  <img src="https://img.shields.io/badge/IDE-Arduino%20IDE-00979D" />
+  <img src="https://img.shields.io/badge/Status-Completed-success" />
+</p>
 
+An Arduino UNO-based multifunction **Electronic Component Tester** capable of measuring and identifying commonly used electronic components through a simple **16×2 LCD menu-driven interface**.
 
-!\[Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?logo=arduino)
+This project demonstrates analog signal measurement, ADC interfacing, embedded programming, and electronic component characterization using Arduino.
 
-!\[Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus)
+---
 
-!\[Platform](https://img.shields.io/badge/IDE-Arduino\_IDE-00979D)
+# Features
 
-!\[Status](https://img.shields.io/badge/Status-Completed-success)
+- ✅ Resistor Measurement
+- ✅ Capacitor Measurement
+- ✅ Inductor Measurement
+- ✅ Silicon, Germanium & Zener Diode Detection
+- ✅ LED Identification
+- ✅ NPN & PNP BJT Detection
+- ✅ Continuity Testing
+- ✅ LDR Resistance Measurement
+- ✅ LCD Menu Interface
+- ✅ Push Button Navigation
 
+---
 
+# Hardware Used
 
-A multifunction \*\*Arduino UNO-based electronic component tester\*\* capable of measuring and identifying commonly used electronic components through a menu-driven \*\*16×2 LCD interface\*\*.
+- Arduino UNO
+- 16×2 LCD Display
+- Breadboard
+- Push Buttons
+- Resistors
+- Capacitors
+- Inductors
+- Diodes
+- LEDs
+- BJTs
+- LDR
+- Jumper Wires
 
+---
 
+# Software Used
 
-The project demonstrates analog measurements, component identification, ADC interfacing, and embedded systems programming using Arduino.
+- Arduino IDE
+- Tinkercad Circuit Simulator
 
+---
 
-
-\---
-
-
-
-\# Features
-
-
-
-\- Measure unknown resistor values
-
-\- Measure capacitor values
-
-\- Measure inductance
-
-\- Detect Silicon, Germanium and Zener diodes
-
-\- Identify LEDs using forward voltage
-
-\- Detect NPN and PNP BJTs
-
-\- Continuity testing
-
-\- LDR resistance measurement
-
-\- LCD-based user interface
-
-\- Push-button menu navigation
-
-
-
-\---
-
-
-
-\# Hardware Used
-
-
-
-\- Arduino UNO
-
-\- 16×2 LCD Display
-
-\- Breadboard
-
-\- Push Buttons
-
-\- Resistors
-
-\- Capacitors
-
-\- Inductors
-
-\- Diodes
-
-\- LEDs
-
-\- BJTs
-
-\- LDR
-
-\- Jumper Wires
-
-
-
-\---
-
-
-
-\# Software Used
-
-
-
-\- Arduino IDE
-
-\- Tinkercad Circuit Simulator
-
-
-
-\---
-
-
-
-\# Folder Structure
-
-
+# Folder Structure
 
 ```text
-
 Arduino-Component-Tester/
-
 │
-
 ├── README.md
-
 ├── LICENSE
-
 ├── .gitignore
-
 ├── code/
-
-│   └── Advanced\_Multimeter.ino
-
+│   └── Arduino-Component-Tester.ino
 ├── circuit/
-
 │   └── Schematic.pdf
-
-└── images/
-
-&#x20;   ├── hardware/
-
-&#x20;   └── simulation/
-
+├── images/
+│   ├── hardware/
+│   └── simulation/
+└── docs/
 ```
 
+---
 
+# Working Principle
 
-\---
+The tester uses a menu-driven interface displayed on a 16×2 LCD.
 
+Using two push buttons, the user selects the desired measurement mode. Depending on the selected mode, the Arduino performs analog voltage measurements, timing analysis, or threshold detection to identify the connected component or calculate its electrical value.
 
+The result is displayed directly on the LCD.
 
-\# Working Principle
+---
 
+# Measurement Modes
 
-
-The user selects a measurement mode using push buttons. Depending on the selected mode, the Arduino performs voltage measurements or timing analysis to calculate the required electrical parameter.
-
-
-
-The measured value or identified component is displayed on the 16×2 LCD.
-
-
-
-\---
-
-
-
-\# Measurement Modes
-
-
-
-| Mode | Description |
-
-|------|-------------|
-
+| Mode | Function |
+|------|----------|
 | 1 | Resistor Measurement |
-
 | 2 | Inductor Measurement |
-
 | 3 | Capacitor Measurement |
-
 | 4 | Diode Detection |
-
 | 5 | LED Identification |
-
 | 6 | BJT Detection |
-
 | 7 | Continuity Test |
-
 | 8 | LDR Measurement |
 
-
-
-\---
-
-
-
-\# Pin Configuration
-
-
-
-| Arduino Pin | Function |
-
-|-------------|----------|
-
-| A0 | Resistor / LDR |
-
-| A1 | Inductor |
-
-| A2 | Capacitor |
-
-| A3 | Diode / LED / Continuity |
-
-| A4 | BJT Emitter |
-
-| A5 | BJT Collector |
-
-| D0 | Next Button |
-
-| D10 | OK Button |
-
-| D6 | BJT Base |
-
-| D7 | MOSFET Control |
-
-| D8 | Inductor Charge |
-
-| D9 | Capacitor Discharge |
-
-| D13 | Capacitor Charge |
-
-| D12, D11, D5, D4, D3, D2 | LCD Interface |
-
-
-
-\---
-
-
+---
 
 # Tinkercad Simulation
 
-You can explore the complete circuit and interact with the simulation on Tinkercad.
+🔗 **Interactive Simulation**
 
-**🔗 [Open the Tinkercad Simulation](https://www.tinkercad.com/things/6FzkCr1LbFs-advanced-multimeter?sharecode=Vx-necX7GMrY8QaXz7o8Sx1Pgvu9k-Aa0CUvpKsUsqs)**
+https://www.tinkercad.com/things/6FzkCr1LbFs-advanced-multimeter?sharecode=Vx-necX7GMrY8QaXz7o8Sx1Pgvu9k-Aa0CUvpKsUsqs
 
-![](images/simulation/resistor.png)
+---
 
+# Circuit Diagram
 
-
-\---
-
-
-
-\# Circuit Diagram
-
-
-
-The complete schematic is available in:
-
-
+The complete circuit schematic is available in
 
 ```
-
 circuit/Schematic.pdf
-
 ```
 
+---
 
+# Demonstration
 
-\---
+## Capacitor Measurement
 
+<p align="center">
+<img src="images/hardware/capacitor.jpeg" width="45%">
+<img src="images/simulation/capacitor.png" width="45%">
+</p>
 
+---
 
-\# Demonstration
+## Continuity Test
 
+<p align="center">
+<img src="images/hardware/continuity-open.jpeg" width="45%">
+<img src="images/hardware/continuity-short.jpeg" width="45%">
+</p>
 
+---
 
-\## Capacitor Measurement
+## Diode Detection
 
+<p align="center">
+<img src="images/hardware/diode.jpeg" width="45%">
+<img src="images/simulation/diode.png" width="45%">
+</p>
 
+---
 
-| Hardware | Simulation |
+## LED Identification
 
-|----------|------------|
+<p align="center">
+<img src="images/hardware/led.jpeg" width="45%">
+<img src="images/simulation/led.png" width="45%">
+</p>
 
-| !\[](images/hardware/capacitor.jpeg) | !\[](images/simulation/capacitor.png) |
+---
 
+## NPN Transistor Detection
 
+<p align="center">
+<img src="images/hardware/bjt-npn.jpeg" width="45%">
+<img src="images/simulation/bjt-npn.png" width="45%">
+</p>
 
-\---
+---
 
+## PNP Transistor Detection
 
+<p align="center">
+<img src="images/hardware/bjt-pnp.jpeg" width="45%">
+<img src="images/simulation/bjt-pnp.png" width="45%">
+</p>
 
-\## Continuity Test
+---
 
+## Zener Diode Detection
 
+<p align="center">
+<img src="images/hardware/zener.jpeg" width="45%">
+<img src="images/simulation/zener-diode.png" width="45%">
+</p>
 
-| Open Circuit | Short Circuit |
+---
 
-|--------------|---------------|
+## Resistor Measurement
 
-| !\[](images/hardware/continuity-open.jpeg) | !\[](images/hardware/continuity-short.jpeg) |
+<p align="center">
+<img src="images/simulation/resistor.png" width="60%">
+</p>
 
+---
 
+## Inductor Measurement
 
-\---
+<p align="center">
+<img src="images/simulation/inductor.png" width="60%">
+</p>
 
+---
 
+## LDR Measurement
 
-\## Diode Detection
+<p align="center">
+<img src="images/simulation/ldr.png" width="60%">
+</p>
 
+---
 
+# Learning Outcomes
 
-| Hardware | Simulation |
+This project provided practical experience in:
 
-|----------|------------|
+- Embedded Systems Programming
+- Arduino Programming
+- Analog Electronics
+- ADC Interfacing
+- Electronic Component Testing
+- LCD Interfacing
+- Instrumentation
+- Circuit Design
 
-| !\[](images/hardware/diode.jpeg) | !\[](images/simulation/diode.png) |
+---
 
+# Future Improvements
 
+- Automatic component recognition
+- Auto-ranging measurements
+- OLED/TFT graphical display
+- PCB implementation
+- Battery-powered operation
+- ESR measurement
+- MOSFET characterization
 
-\---
+---
 
+# Author
 
+**Akshay Patankar**
 
-\## LED Identification
-
-
-
-| Hardware | Simulation |
-
-|----------|------------|
-
-| !\[](images/hardware/led.jpeg) | !\[](images/simulation/led.png) |
-
-
-
-\---
-
-
-
-\## NPN Transistor Detection
-
-
-
-| Hardware | Simulation |
-
-|----------|------------|
-
-| !\[](images/hardware/bjt-npn.jpeg) | !\[](images/simulation/bjt-npn.png) |
-
-
-
-\---
-
-
-
-\## PNP Transistor Detection
-
-
-
-| Hardware | Simulation |
-
-|----------|------------|
-
-| !\[](images/hardware/bjt-pnp.jpeg) | !\[](images/simulation/bjt-pnp.png) |
-
-
-
-\---
-
-
-
-\## Zener Diode Detection
-
-
-
-| Hardware | Simulation |
-
-|----------|------------|
-
-| !\[](images/hardware/zener-diode.jpeg) | !\[](images/simulation/zener-diode.png) |
-
-
-
-\---
-
-
-
-\## Resistor Measurement
-
-
-
-!\[](images/simulation/resistor.png)
-
-
-
-\---
-
-
-
-\## Inductor Measurement
-
-
-
-!\[](images/simulation/inductor.png)
-
-
-
-\---
-
-
-
-\## LDR Measurement
-
-
-
-!\[](images/simulation/ldr.png)
-
-
-
-\---
-
-
-
-\# Learning Outcomes
-
-
-
-Through this project I gained practical experience in:
-
-
-
-\- Arduino Programming
-
-\- Embedded Systems
-
-\- Analog Electronics
-
-\- ADC Interfacing
-
-\- Electronic Component Testing
-
-\- LCD Interfacing
-
-\- Instrumentation Basics
-
-\- Circuit Design
-
-
-
-\---
-
-
-
-\# Future Improvements
-
-
-
-\- Automatic component recognition
-
-\- Auto-ranging measurements
-
-\- OLED/TFT graphical display
-
-\- PCB implementation
-
-\- Battery-powered operation
-
-\- ESR measurement
-
-\- MOSFET characterization
-
-
-
-\---
-
-
-
-\# Author
-
-
-
-\*\*Akshay Patankar\*\*
-
-
-
-BE Electronics \& Telecommunication Engineering  
-
-Honours in Artificial Intelligence \& Machine Learning
-
-
+BE Electronics & Telecommunication Engineering  
+Honours in Artificial Intelligence & Machine Learning
 
 Pune Institute of Computer Technology (PICT)
 
+---
 
-
-\---
-
-
-
-\# License
-
-
+# License
 
 This project is licensed under the MIT License.
-
