@@ -68,6 +68,8 @@ Arduino-Component-Tester/
 │   ├── hardware/
 │   └── simulation/
 └── docs/
+    └── Arduino-Component-Tester.docx
+
 ```
 
 ---
