@@ -15,16 +15,16 @@ This project demonstrates analog signal measurement, ADC interfacing, embedded p
 
 # Features
 
-- ✅ Resistor Measurement
-- ✅ Capacitor Measurement
-- ✅ Inductor Measurement
-- ✅ Silicon, Germanium & Zener Diode Detection
-- ✅ LED Identification
-- ✅ NPN & PNP BJT Detection
-- ✅ Continuity Testing
-- ✅ LDR Resistance Measurement
-- ✅ LCD Menu Interface
-- ✅ Push Button Navigation
+- Resistor Measurement
+- Capacitor Measurement
+- Inductor Measurement
+- Silicon, Germanium & Zener Diode Detection
+- LED Identification
+- NPN & PNP BJT Detection
+- Continuity Testing
+- LDR Resistance Measurement
+- LCD Menu Interface
+- Push Button Navigation
 
 ---
 
