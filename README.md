@@ -115,6 +115,18 @@ circuit/Schematic.pdf
 
 ---
 
+---
+
+# Documentation
+
+A detailed project report containing the design methodology, circuit implementation, testing procedure, and results is available here:
+
+📄 **[Arduino Component Tester Project Report](docs/Arduino-Component-Tester.docx)**
+
+> **Note:** This report was originally prepared as part of an academic project submission at Pune Institute of Computer Technology (PICT).
+
+---
+
 # Demonstration
 
 ## Capacitor Measurement
