@@ -108,7 +108,7 @@ The project demonstrates analog measurements, component identification, ADC inte
 
 ```text
 
-Arduino-Advanced-Multimeter/
+Arduino-Component-Tester/
 
 │
 
@@ -274,7 +274,7 @@ circuit/Schematic.pdf
 
 |----------|------------|
 
-| !\[](images/hardware/capacitor.jpg) | !\[](images/simulation/capacitor.png) |
+| !\[](images/hardware/capacitor.jpeg) | !\[](images/simulation/capacitor.png) |
 
 
 
@@ -290,7 +290,7 @@ circuit/Schematic.pdf
 
 |--------------|---------------|
 
-| !\[](images/hardware/continuity-open.jpg) | !\[](images/hardware/continuity-short.jpg) |
+| !\[](images/hardware/continuity-open.jpeg) | !\[](images/hardware/continuity-short.jpeg) |
 
 
 
@@ -306,7 +306,7 @@ circuit/Schematic.pdf
 
 |----------|------------|
 
-| !\[](images/hardware/diode.jpg) | !\[](images/simulation/diode.png) |
+| !\[](images/hardware/diode.jpeg) | !\[](images/simulation/diode.png) |
 
 
 
@@ -322,7 +322,7 @@ circuit/Schematic.pdf
 
 |----------|------------|
 
-| !\[](images/hardware/led.jpg) | !\[](images/simulation/led.png) |
+| !\[](images/hardware/led.jpeg) | !\[](images/simulation/led.png) |
 
 
 
@@ -338,7 +338,7 @@ circuit/Schematic.pdf
 
 |----------|------------|
 
-| !\[](images/hardware/bjt-npn.jpg) | !\[](images/simulation/bjt-npn.png) |
+| !\[](images/hardware/bjt-npn.jpeg) | !\[](images/simulation/bjt-npn.png) |
 
 
 
@@ -354,7 +354,7 @@ circuit/Schematic.pdf
 
 |----------|------------|
 
-| !\[](images/hardware/bjt-pnp.jpg) | !\[](images/simulation/bjt-pnp.png) |
+| !\[](images/hardware/bjt-pnp.jpeg) | !\[](images/simulation/bjt-pnp.png) |
 
 
 
@@ -370,7 +370,7 @@ circuit/Schematic.pdf
 
 |----------|------------|
 
-| !\[](images/hardware/zener-diode.jpg) | !\[](images/simulation/zener-diode.png) |
+| !\[](images/hardware/zener-diode.jpeg) | !\[](images/simulation/zener-diode.png) |
 
 
 
